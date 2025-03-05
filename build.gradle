@@ -25,12 +25,19 @@ repositories {
 }
 
 dependencies {
+	//spring web
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	//lombok
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	//tomcat
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	//test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	//jsp
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'jakarta.servlet:jstl'
 }
 
 tasks.named('test') {
