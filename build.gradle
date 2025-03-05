@@ -36,8 +36,9 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	//jsp
-	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
-	implementation 'jakarta.servlet:jstl'
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:10.1.36'
+	implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:2.0.0'
 }
 
 tasks.named('test') {
